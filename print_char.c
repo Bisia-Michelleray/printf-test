@@ -3,16 +3,13 @@
 /**
  * print_char - prints a char
  * @ch: arguments to be passed
- * format: character string
  *
  * Return: number of characters printed
  */
 
 int print_char(va_list ch)
 {
-	char s;
 
-	s = va_arg(ch, int);
-	_putchar(s);
+	_putchar(va_arg(ch, int));
 	return (1);
 }
